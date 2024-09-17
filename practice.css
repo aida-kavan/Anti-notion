@@ -1,0 +1,204 @@
+@font-face {
+    font-family: raleway;
+    src: url(./Raleway/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: raleway-bold;
+    src: url(./Raleway/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: estedad;
+    src: url(/Estedad-Medium.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: raleway;
+    background-color: rgb(238, 235, 217);
+    flex-direction: column;
+    font-family: estedad;
+    direction: rtl;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 30px;
+    direction: rtl;
+}
+.topSection>p {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(90, 69, 41);
+    font-size:x-small
+}
+
+.topSection{
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+}
+
+
+.middleSection{
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+}
+
+.image{
+    width: 350px;
+}
+
+.bottomSection{
+    width: 100%;
+    height: 20vh;
+    flex-direction: column;
+}
+
+.enter-btn{
+    text-decoration: none;
+    color: rgb(94, 59, 26);
+}
+
+.enter-btn:hover{
+    color: rgb(92, 92, 92);
+    transition: all 0.3s;
+}
+
+.mainSection{
+    display: block;
+}
+
+.notepad{
+    width: 90%;
+    height: 90%;
+    margin: 20px;
+    flex-direction: column;
+}
+
+
+.newTask{
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.newTask>input{
+    width: 300px;
+    height: 27px;
+    border: 2px rgb(102, 117, 109) solid;
+    border-radius: 3px;
+    direction: rtl;
+    padding-right: 10px;
+    font-family: estedad;
+}
+
+.newTask>input:focus{
+    border: 2px rgb(48, 71, 47) solid;
+    outline: none ;
+    border-radius: 3px;
+    transition: all 0.1s;
+}
+
+.color-box{
+   
+   border-radius: 50%;
+   height: 18px;
+    width: 18px;
+    margin-left: 5px;
+}
+
+.colors{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navigationBar{
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.erase , .add{
+    width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+
+
+.TaskBox{
+    width: 90%;
+    min-height: 200px;
+    background-color: rgb(106, 133, 108);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.TaskBox>h5{
+    color: white;
+    margin-bottom: 10px;    
+}
+
+
+.image{
+    width: 17px;
+    height: 17px;
+    margin-right: 0.5rem;
+}
+
+.task{
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+}
+
+.task>h6{
+    font-size: small;
+    margin-right: 5px;
+    font-family: estedad;
+    height: 2rem;
+}
+
+.allTaskBox{
+    width: 300px;
+    
+}
+
+@media screen and (min-width:1000px){
+    .allTaskBox{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        width: 900px;
+        
+    }
+}
+
+@media  screen and (min-width:500px) and (max-width: 1000px) {
+    .allTaskBox{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        width: 700px;
+        justify-content: center;
+        align-items: baseline;
+        
+    }
+    .doneBox{
+        width: 470px;
+        
+    }
+}

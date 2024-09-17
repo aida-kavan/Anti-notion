@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" dir="rtl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dragable notpad for mobile -first page</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body class="flex">
+<!--     
+    <section class="mainSection">
+        
+    <section class="topSection flex">
+        <h1>برنامه ی مخالفان نوشن!</h1>
+        <p>آیا ایده ی ساختن یک نوت پد وقتی هنوز ریاضی نخوندم چیز جالبی بود؟</p>
+    </section>
+
+    <section class="middleSection flex">
+        <img class="image" src="./intro.png" alt="">
+    </section>
+
+    <section class="flex">
+        <span  class="enter-btn">
+            <h3>(:برای ورود به قسمت نوت پد کلیک کن</h3>
+        </span>
+    </section>
+    </section> -->
+
+
+
+    <section class="notepad flex">
+            
+        <div class="newTask flex">
+            <h2>تسک جدید را اضافه کن:</h2>
+            
+            <input type="text" autocomplete="off" placeholder="تسک جدید.">
+
+            <div class="flex navigationBar">
+
+                <section class="colors flex">
+            
+                    <div class="color-box" style="background-color: #8b7961;"></div>
+                    <div class="color-box" style="background-color: #5f4a23;"></div>
+                    <div class="color-box" style="background-color: #6b5636;"></div>
+                    <div class="color-box" style="background-color: #b19a7c;"></div>
+                </section>
+                
+                <section class="buttons flex">
+                    <span class="erase">
+                      <img src="erase.png" alt="">
+                    </span>
+
+                    <span class="add">
+                      <img src="plus.png">
+                    </span>
+
+                </section>
+                
+            </div>
+        </div>
+        <section class="allTaskBox">
+
+            <div dropa class="TaskBox">
+                <h5>تسک های نام گذاری نشده:</h5>
+                <div draggable="true" class="task flex">
+                    <img class="image" src="circle-02.svg" alt="">
+                    <h6 class="flex">تسک موردنظر</h6>
+                </div>
+                <div draggable="true" class="task flex">
+                    <img class="image" src="circle-02.svg" alt="">
+                    <h6 class="flex">تسک موردنظر</h6>
+                </div>
+                <div draggable="true" class="task flex">
+                    <img class="image" src="circle-02.svg" alt="">
+                    <h6 class="flex">تسک موردنظر</h6>
+                </div>
+                
+            </div>
+    
+    
+            <div dropa class="TaskBox">
+                <h5>تسک های در حال انجام:</h5>
+            </div>
+    
+    
+            <div dropa class="TaskBox doneBox">
+                <h5>تسک های  انجام شده:</h5>
+                
+            </div>
+            
+        </section>
+        
+
+    </section>
+
+    <script src="practice.js"></script>
+</body>
+</html>
