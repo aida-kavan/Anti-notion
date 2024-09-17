@@ -1,14 +1,14 @@
 @font-face {
     font-family: raleway;
-    src: url(./Raleway/Raleway-Medium.ttf);
+    src: url(Raleway-Medium.ttf);
 }
 @font-face {
     font-family: raleway-bold;
-    src: url(./Raleway/Raleway-SemiBold.ttf);
+    src: url(Raleway-SemiBold.ttf);
 }
 @font-face {
     font-family: estedad;
-    src: url(/Estedad-Medium.ttf);
+    src: url(Estedad-Medium.ttf);
 }
 
 
